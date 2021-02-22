@@ -256,6 +256,7 @@ void setup() {
   #ifdef DEBUG 
     Serial.println("GPIO Setup complete");
   #endif
+  //FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(outputLEDS, NUM_LEDS).setCorrection(TypicalLEDStrip);  
   FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(outputLEDS, 0, NUM_LEDS_PER_STRIP).setCorrection(TypicalLEDStrip);
   FastLED.addLeds<LED_TYPE, DATA_PIN2, COLOR_ORDER>(outputLEDS, NUM_LEDS_PER_STRIP, NUM_LEDS_PER_STRIP).setCorrection(TypicalLEDStrip);
   FastLED.setMaxPowerInVoltsAndMilliamps(12, 10000); //experimental for power management. Feel free to try in your own setup.
