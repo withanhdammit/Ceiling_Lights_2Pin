@@ -82,6 +82,8 @@ String (*externalEffect[])(char,bool){
   #define FASTLED_ESP8266_RAW_PIN_ORDER
 #endif
 
+//#define FASTLED_FORCE_SOFTWARE_SPI
+#define FASTLED_ESP32_I2S
 #include <FastLED.h>
 #include <ArduinoOTA.h>
 #include "config.h"
@@ -280,7 +282,7 @@ void setup() {
     Serial.println("Initial setup complete - LEDs on RED"); 
   #endif
   setup_wifi();
-  #ifdef DEBUG 
+  //#ifdef DEBUG 
     Serial.println("WiFi Setup complete"); 
     Serial.print("Hostname: ");
     #ifdef ESP32
@@ -288,7 +290,7 @@ void setup() {
     #else
       Serial.println(WiFi.hostname());
     #endif
-  #endif
+  //#endif
   client.setServer(MQTT_BROKER, MQTT_PORT);
   client.setCallback(callback);
   #ifdef DEBUG 
@@ -377,7 +379,7 @@ void setup_wifi() {
     FastLED.show();
     Serial.println("");
     Serial.println("WiFi connected");
-    Serial.println("IP address: ");
+    Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
     delay(750);
   } else if (WiFi.status() == WL_NO_SSID_AVAIL) {
