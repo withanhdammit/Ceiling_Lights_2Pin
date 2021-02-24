@@ -3,13 +3,13 @@
 
 //    REQUIRED CONFIGURATION     
 // WIFI //
-#define WIFI_SSID     "HomeIOT"            // your WIFI SSID
-#define WIFI_PASSWORD "Society!ReceptiveDelightfulLeafGrip"       // your WIFI Password
+#define WIFI_SSID     "Your SSID"        // your WIFI SSID
+#define WIFI_PASSWORD "WiFi Password"    // your WIFI Password
 // MQTT //
-#define MQTT_BROKER   "172.24.42.59"          // your MQTT broker address or IP.
+#define MQTT_BROKER   "1.2.3.4"          // your MQTT broker address or IP.
 #define MQTT_PORT     1883               // your MQTT port (usually 1883 for unencrypted connection)
-#define MQTT_USERNAME "homeassistant"    // your MQTT username
-#define MQTT_PASSWORD "ruGhei1iv2ohsho5Tohngai0jiek4iziey1adieZ9ohVeedaeli0iuHoupha4eil"    // your MQTT password
+#define MQTT_USERNAME "MQTT username"    // your MQTT username
+#define MQTT_PASSWORD "MQTT password"    // your MQTT password
 //DEVICE CONFIG //
 #define DEVICE_NAME   "Ceiling-test2"    // Unique name for this device
 #define LED_TYPE      WS2812B            // your LED type WS2812 / WS2811
