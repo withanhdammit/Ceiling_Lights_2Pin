@@ -12,6 +12,9 @@
  */
 #define VERSION "0.11.0"
 
+// Uncomment for debug output
+//#define DEBUG
+
 String (*externalEffect[])(char,bool){
   // add your custom effects to this list
   // this also sets the order of the effects list in Home Assistant

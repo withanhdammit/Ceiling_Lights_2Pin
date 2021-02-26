@@ -1043,7 +1043,7 @@ byte colorweighting[4][6] = {
   { 10, 10, 10, 10, 10, 10 },   //Weighting equal (every color is equally likely)
   {  2,  2,  2,  6,  6,  6 },   //Weighting blue/red/purple high
   {  3,  3,  3,  3,  2,  2 },   //Weighting red/purple low
-  { 10, 10, 10,  7,  7,  7 }    //Weighting green, blue/purple/red less
+  { 10, 10, 10,  9,  9,  9 }    //Weighting green, blue/purple/red less
 };
 
 //Function to get the color for a wave based on the weighting.
