@@ -3,23 +3,26 @@
 
 //    REQUIRED CONFIGURATION     
 // WIFI //
-#define WIFI_SSID     "Your SSID"        // your WIFI SSID
-#define WIFI_PASSWORD "WiFi Password"    // your WIFI Password
+#define WIFI_SSID     "HomeIOT"          // your WIFI SSID
+#define WIFI_PASSWORD "Society!ReceptiveDelightfulLeafGrip" // your WIFI Password
 // MQTT //
-#define MQTT_BROKER   "1.2.3.4"          // your MQTT broker address or IP.
+#define MQTT_BROKER   "172.24.42.59"     // your MQTT broker address or IP.
 #define MQTT_PORT     1883               // your MQTT port (usually 1883 for unencrypted connection)
-#define MQTT_USERNAME "MQTT username"    // your MQTT username
-#define MQTT_PASSWORD "MQTT password"    // your MQTT password
+#define MQTT_USERNAME "homeassistant"    // your MQTT username
+#define MQTT_PASSWORD "ruGhei1iv2ohsho5Tohngai0jiek4iziey1adieZ9ohVeedaeli0iuHoupha4eil" // your MQTT password
+
 //DEVICE CONFIG //
 #define DEVICE_NAME   "Ceiling-test2"    // Unique name for this device
 #define LED_TYPE      WS2812B            // your LED type WS2812 / WS2811
 #define COLOR_ORDER   RGB                // your color order (normally: RGB for WS2811 | GRB for WS2812)
 //#define NUM_LEDS      1200                // number of LEDs in your strip
 #define NUM_LEDS_PER_STRIP      300      // number of LEDs in your strip
-#define NUM_STRIPS    2                  // number of strips
+#define NUM_STRIPS    4                  // number of strips
 #define NUM_LEDS      NUM_LEDS_PER_STRIP * NUM_STRIPS
-#define DATA_PIN      15                 // Pin the LEDs are connected to
+#define DATA_PIN1     15                 // Pin the LEDs are connected to
 #define DATA_PIN2     13
+#define DATA_PIN3     12
+#define DATA_PIN4     2
 #define OTA_PASSWORD  "shish kabob"      //the password you will need to enter to upload remotely via the ArduinoIDE
 
 //            OPTIONS              
